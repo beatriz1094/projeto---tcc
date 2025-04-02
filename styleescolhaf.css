@@ -14,10 +14,20 @@ body{
 
 }
 HEADER{
-    BACKGROUND: #ab834f;
+    BACKGROUND: #997b53e5;
     PADDING: 1REM 0;
     TEXT-ALIGN: CENTER;
     
+}
+
+a:hover {
+    color: #835c2f;
+    text-decoration-color: #7a6131;
+}
+a {
+    color: #835c2f;
+    text-decoration: underline; 
+    text-decoration-color: #835c2f;
 }
 img{
     object-fit: center;
@@ -28,22 +38,22 @@ img{
 .lista{
     display: flex;
     gap: 1em;
-    
 }
 
 .item{
-    width: 250px;
-    height: 300px;
+    width: 600px;
+    height: 650px;
     overflow: hidden;
     position: relative;
     transition: 1s;
 }
 p{
+    font-size: 55px;
     color: #fff;
     width: 80%;
     position: absolute;
     top: 100%;
-    left: 50%;
+    left: 20%;
     transform: translate(-50, -50);
     transition: 1s;
     opacity: 0;

@@ -1,5 +1,5 @@
 body  {
-    background: url('tela.inicio.png') no-repeat center center fixed;
+    background: url('tela.inicio.png') no-repeat center center;
     background-size: cover;
 }
 SECTION{
@@ -13,3 +13,12 @@ SECTION{
     MAX-WIDTH: 100PX;
     MARGIN: 0 AUTO;
 }
+footer {
+    background-color: #2c5220; 
+    padding: 40px 20px;
+    color: #fff; 
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
