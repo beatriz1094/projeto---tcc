@@ -10,11 +10,11 @@ body{
     margin:0;
     padding:0;
     overflow-x: hidden;
-    background-color: #c3ac8d;
+    background-color: #7c6648;
 
 }
 HEADER{
-    BACKGROUND: #997b53e5;
+    BACKGROUND: #5b4730e5;
     PADDING: 1REM 0;
     TEXT-ALIGN: CENTER;
     
@@ -27,7 +27,7 @@ a:hover {
 a {
     color: #835c2f;
     text-decoration: underline; 
-    text-decoration-color: #c0a689;
+    text-decoration-color: #8d663a;
 }
 img{
     object-fit: center;
