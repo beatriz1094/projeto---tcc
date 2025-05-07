@@ -1,6 +1,8 @@
 body  {
-    background: url('tela.inicio.png') no-repeat center center;
+    background: url('tela.inicio.png') no-repeat center center ;
     background-size: cover;
+    background-position: 50%;
+
 }
 SECTION{
     PADDING: 2REM;
@@ -13,8 +15,26 @@ SECTION{
     MAX-WIDTH: 100PX;
     MARGIN: 0 AUTO;
 }
+
+.cards {
+    display: flex;
+    gap: 1rem;
+}
+.card{
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0 4px 8px rgb(17, 16, 16);
+    transition: transform 0,3s ease, box-shadow 0.3 ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgb(253, 191, 245);
+
+}
 footer {
-    background-color: #2c5220; 
+    background-color: #333030; 
     padding: 40px 20px;
     color: #fff; 
     text-align: center;
@@ -22,3 +42,4 @@ footer {
     bottom: 0;
     width: 100%;
   }
+
