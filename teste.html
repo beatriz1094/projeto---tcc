@@ -1,31 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="teste.css">
-  <title>ALL WEAR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário Verdade</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="t"></div>
-  <div class="container">
-    <div class="left"></div>
-    <div class="right"></div>
-    <div class="curved-text">
-      <svg viewBox="0 0 300 150">
-        <path id="curve" d="M10,120 Q150,10 290,120" fill="transparent"/>
-        <text>
-          <textPath href="#curve" startOffset="50%" text-anchor="middle">
-            ALL WEAR
-          </textPath>
-        </text>
-      </svg>
+    <div class="banner">
+        <center><img src="feminino.jpg" class="poster">
+        <img src="masculino.jpg" class="poster"></center>
     </div>
-  </div>
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 ALL WEAR. Todos os direitos reservados.</p>
+    <section id="sobre.nos">
+    <div class="content">
+           <center> <h2><font color="black">ALL WEAR</h2></font>
+            <p>Este é um espaço onde você pode escolher sua combinação perfeita de roupa para seu dia.</p></center>
     </div>
-  </footer>
+
+    <section id="projetod">
+        <div class="container">
+            <h2><font color= purple>Meus Projetos</h2></font>
+            <div class="cards">
+                <div class="card">
+                <h3>Site - Escola De Ballet</h3>
+                <p>HTML e CSS</p>
+                </div>
+            <div class="card">
+                <h3>Site - Bliblioteca Virtual</h3>
+                <p>Livros Roxos para todos os gostos</p>
+            
+            </div>
+        </div>
+    </section>
+ <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem</label>
+                <textarea for="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Meu Portifólio</p>
+    </footer>
+    </body>
+</html>
 </body>
 </html>

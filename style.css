@@ -1,45 +1,57 @@
-body  {
-    background: url('tela.inicio.png') no-repeat center center ;
-    background-size: cover;
-    background-position: 50%;
-
+* {
+    MARGIN: 0;
+    PADDING: 0;
+    BOX-SIZING: BORDER-BOX;
 }
+BODY{
+    FONT-FAMILY: ARIAL, SANS-SERIF;
+    LINE-HEIGHT: 1.6;
+    BACKGROUND: #d5c5b0;
+    
+}
+
+
 SECTION{
     PADDING: 2REM;
-    MARGIN: 1REM;
-    BACKGROUND: #e2dbdb;
-    BORDER-RADIUS: 8PX;
-    BOX-SHADOW: 0 4PX 8PX rgb(0, 0, 0);
+    MARGIN: 5REM;
+    BACKGROUND: #a9824f;
+    BOX-SHADOW: 0 4PX 8PX rgb(84, 57, 31);
 }
 .container{
     MAX-WIDTH: 100PX;
     MARGIN: 0 AUTO;
 }
+H2{
+    MARGIN-BOTTOM: 1REM;
+}
 
+/*projetos*/
 .cards {
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
 }
+
 .card{
-    background: #f4f4f4;
-    border-radius: 8px;
+    background: #c5aa83;
+    border-radius: 4px;
     padding: 1rem;
-    width: 100%;
-    box-shadow: 0 4px 8px rgb(17, 16, 16);
+    width: 50%;
+    box-shadow: 0 4px 8px rgb(82, 57, 21);
     transition: transform 0,3s ease, box-shadow 0.3 ease;
 }
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgb(253, 191, 245);
+    box-shadow: 0 8px 16px rgb(69, 42, 0);
 
 }
+
+
+/*Footer*/
 footer {
-    background-color: #333030; 
-    padding: 40px 20px;
-    color: #fff; 
+    background: #080500;
+    color: #fff;
     text-align: center;
-    position: relative;
+    padding: 1rem 0;
     bottom: 0;
     width: 100%;
-  }
-
+}
