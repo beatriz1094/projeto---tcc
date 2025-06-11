@@ -1,22 +1,78 @@
 * {
-    MARGIN: 0;
-    PADDING: 0;
-    BOX-SIZING: BORDER-BOX;
-}
-BODY{
-    FONT-FAMILY: ARIAL, SANS-SERIF;
-    LINE-HEIGHT: 1.6;
-    BACKGROUND: #d5c5b0;
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee5d9;
+    overflow-x: hidden;
+    font-family: Baskerville, serif;
+  }
+  
+  header {
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .banner {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .banner img {
+    width: 50%;
+    height: 80%;
+    display: block;
+  }
+
+/* header */
+
+  .faixa {
+    width: 100%;
+    background-color: #222d52;
+    color: #e8e4e0;
+    text-align: center;
+    padding: 10px 50px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin-top: -80px;
+  }
+  
+  .faixa h1 {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+    animation: rotate-text 10s linear infinite;
+  }
+
+.button {
+  margin-top: 0.5rem;
+  text-align: right;
 }
 
-
-SECTION{
-    PADDING: 2REM;
-    MARGIN: 5REM;
-    BACKGROUND: #a9824f;
-    BOX-SHADOW: 0 4PX 8PX rgb(84, 57, 31);
+.button a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #241903;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
+
+.button a:hover {
+  background-color: #949494;
+}
+
 .container{
     MAX-WIDTH: 100PX;
     MARGIN: 0 AUTO;
@@ -25,33 +81,109 @@ H2{
     MARGIN-BOTTOM: 1REM;
 }
 
-/*projetos*/
 .cards {
     display: flex;
-    gap: 4rem;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
 
-.card{
-    background: #c5aa83;
-    border-radius: 4px;
-    padding: 1rem;
+  
+  .card img.poster {
     width: 50%;
-    box-shadow: 0 4px 8px rgb(82, 57, 21);
-    transition: transform 0,3s ease, box-shadow 0.3 ease;
-}
-.card:hover {
+    border-radius: 10px;
+  }
+  
+  .card h2 {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  
+  .veja-mais {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgb(69, 42, 0);
+    box-shadow: #d5c5b0
+  }
 
+  
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--t2);
 }
 
+.janela {
+    width: 40%;
+    height: fit-content;
+    background-color: var(--c4);
+    box-shadow: 0 0 5px var(--t1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 
-/*Footer*/
+    & div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    & button {
+        width: fit-content;
+        background-color: var(--c3);
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px var(--t2);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    & form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+input{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--t2);
+    font-weight: bold;
+    width: 95%;
+}
+
+.oculto{
+    display: none;
+}
+
+@media screen and (max-width: 770px){
+    .janela{
+        min-width: 90%;
+    }
+}
+
 footer {
-    background: #080500;
+    background: #2c1f0b;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     bottom: 0;
-    width: 100%;
+    width: 100%;                                                                             
 }
