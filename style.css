@@ -9,7 +9,7 @@
     padding: 0;
     background-color: #eee5d9;
     overflow-x: hidden;
-    font-family: Baskerville, serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   
   header {
@@ -34,7 +34,7 @@
 
   .faixa {
     width: 100%;
-    background-color: #222d52;
+    background-color: #000000;
     color: #e8e4e0;
     text-align: center;
     padding: 10px 50px;
@@ -45,7 +45,7 @@
   
   .faixa h1 {
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: normal;
     letter-spacing: 3px;
     color: white;
@@ -61,7 +61,7 @@
 .button a {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #241903;
+  background-color: #222d52;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -180,7 +180,7 @@ input{
 }
 
 footer {
-    background: #2c1f0b;
+    background: #000000;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
